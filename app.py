@@ -26,7 +26,7 @@ try:
     # Evaluate derivative at a point
     value = st.number_input("Enter a value of x to evaluate f'(x):", value=0.0)
     result = first_derivative.subs(x, value)
-    st.write(f"🧮 **f'({value}) = {result}**")
+    st.latex(sp.latex(derivative))  # Displays in proper math notation
 
     # Plot function and derivative
     def plot_function():
